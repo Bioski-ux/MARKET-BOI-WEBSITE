@@ -25,7 +25,7 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
   });
 });
 // Open modal when "Join the Waitlist" is clicked
-document.querySelector('.btn.primary').addEventListener('click', () => {
+document.querySelector('.btn.secondary').addEventListener('click', () => {
   document.getElementById('waitlist-modal').style.display = 'flex';
   startCountdown();
 });
