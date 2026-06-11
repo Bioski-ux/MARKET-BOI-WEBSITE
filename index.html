@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Boi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo-link">
+      <img src="./assets/logo.png" alt="Market Boi Logo" class="logo-img">
+    </a>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="#our-plan">Investment Plan</a></li>
+      </ul>
+    </nav> 
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Reinventing Local Markets for the Digital Age.</h1>
+      <p>Market Boi connects vendors and customers seamlessly, solving inefficiency, trust gaps, and lack of digital presence in traditional markets.</p>
+        <div class="cta-buttons">
+          <button class="btn primary" onclick="location.href='about.html'">About</button>
+          <button class="btn primary" onclick="openWhatsApp()">Partner With Us</button>
+          <button class="btn secondary" onclick="openWaitlistModal()">Join the Waitlist</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flowchart Section -->
+  <section class="section flowchart">
+    <h2>How Market Boi Works</h2>
+    <img src="./assets/assetsflowchart.png" alt="Customer to Delivery Flowchart" class="flowchart-img">
+  </section>
+
+  <!-- Product Preview Section -->
+  <section class="section preview">
+    <h2>Product Preview</h2>
+    <img src="./assets/assetsapp-mockups.png" alt="Market Boi App Interface" class="preview-img">
+  </section>
+
+  <!-- Problem Statement -->
+  <section class="section">
+    <h2>Problem Statement</h2>
+    <ul>
+      <li>Fragmented, unstructured local markets</li>
+      <li>Lack of trust between buyers and sellers</li>
+      <li>No digital visibility for vendors</li>
+      <li>Stressful, time‑consuming shopping experience</li>
+    </ul>
+  </section>
+
+  <!-- Solution -->
+  <section class="section">
+    <h2>Solution</h2>
+    <p>Market Boi makes local markets digital, secure, and efficient:</p>
+    <ul>
+      <li>Customers browse or request items via the app</li>
+      <li>Verified vendors list products easily</li>
+      <li>Secure payments ensure trust</li>
+      <li>Agents handle negotiation, packaging, and delivery</li>
+      <li>Real‑time communication keeps everyone aligned</li>
+    </ul>
+  </section>
+
+  <!-- Plan section -->
+  <section id="our-plan" class="plans-section">
+  <h2>Our Investment Package</h2>
+  <div class="plans-grid">
+    <a href="./about.html" class="plan-btn bronze">Bronze Plan</a>
+    <a href="silver.html" class="plan-btn silver">Silver Plan</a>
+    <a href="gold.html" class="plan-btn gold">Gold Plan</a>
+    <a href="diamond.html" class="plan-btn diamond">Diamond Plan</a>
+    <a href="platinum.html" class="plan-btn platinum">Platinum Plan</a>
+  </div>
+</section>
+
+  <!-- Market Opportunity -->
+  <section class="section">
+    <h2>Market Opportunity</h2>
+    <p>Informal/local markets in Africa alone represent billions in annual trade. Market Boi is scalable city by city, country by country, unlocking digital inclusion opportunities.</p>
+  </section>
+
+  <!-- Why It Matters -->
+  <section class="section">
+    <h2>Why It Matters</h2>
+    <p>Economic empowerment, digital inclusion, and future commerce — Market Boi is building the foundation for next‑gen market ecosystems.</p>
+  </section>
+
+  <!-- Roadmap -->
+  <section class="section">
+    <h2>Traction / Roadmap</h2>
+    <ul>
+      <li>Now: MVP testing with small vendor/agent network</li>
+      <li>Next 6 Months: Launch in pilot city, onboard 1,000 vendors</li>
+      <li>12 Months: Expand to 3 cities, strategic partnerships</li>
+      <li>Future: Regional scaling, advanced logistics integration</li>
+    </ul>
+  </section>
+
+  <!-- Investment Opportunity -->
+  <section class="section investment">
+    <h2>Investment Opportunity</h2>
+    <p>Be part of the future of commerce in emerging markets.</p>
+    <button class="btn primary" onclick="location.href='#our-plan'">Invest in Market Boi</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contact: info@marketboi.com</p>
+    <p>Follow us: LinkedIn | Twitter | Instagram</p>
+  </footer>
+
+  <!-- Floating WhatsApp Icon -->
+  <div id="whatsapp-float" onclick="openWhatsApp()">
+    💬
+  </div>
+
+  <!-- Waitlist Modal -->
+  <div id="waitlist-modal" class="modal">
+    <div class="modal-content">
+      <h2>🚀 Coming Soon</h2>
+      <p>Market Boi is launching soon. Stay tuned!</p>
+      <div id="countdown"></div>
+      <button onclick="closeModal()" class="btn primary">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
