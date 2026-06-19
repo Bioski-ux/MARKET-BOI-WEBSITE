@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Market Boi Investor Pitch</title>
+
+<style>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-y: auto;       /* allow scrolling if content is taller */
+  background: #000;
+  color: white;
+}
+
+/* SLIDES */
+.slide {
+  width: 100%;
+  min-height: 100vh;      /* full screen feel but flexible */
+  height: auto;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.content {
+  max-width: 1000px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+.quote {
+  font-style: italic;
+  color: #ffc107;
+  margin: 20px 0;
+}
+
+.slide img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+/* BACKGROUNDS */
+.hero {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+              url('images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.digital { background: #111827; }
+.problem { background: #1f2937; }
+.solution { background: #0f172a; }
+.invest { background: #065f46; }
+
+/* BUTTONS */
+.nav-buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* arrows at corners */
+  padding: 0 20px;
+}
+
+button {
+  background: transparent;
+  border: none;
+  font-size: 2rem;        /* bold arrows */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.prev { color: #ff0000; }   /* red arrow */
+.next { color: #22c55e; }   /* green arrow */
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 1024px) {
+  h1 { font-size: 3rem; }
+  h2 { font-size: 1.6rem; }
+  p { font-size: 1.1rem; }
+  .slide { padding: 40px 15px; }
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.4rem; }
+  p { font-size: 1rem; line-height: 1.6; }
+  .slide { padding: 30px 15px; }
+  .slide img { max-width: 100%; height: auto; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.2rem; }
+  p { font-size: 0.95rem; line-height: 1.4; }
+  .slide { padding: 20px 10px; }
+  button { font-size: 1.5rem; } /* slightly smaller arrows */
+}
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 -->
+<section class="slide active hero">
+  <div class="content">
+    <h1>MARKET BOI</h1>
+    <h2>The Future of Neighborhood Commerce</h2>
+    <p>Your Market, Delivered Without The Stress</p>
+    <img src="./assets/CONNECTING THE WOLD.png" alt="Connecting the World">
+  </div>
+</section>
+
+<!-- SLIDE 2 -->
+<section class="slide digital">
+  <div class="content">
+    <h1>Every Great Innovation Was Once Rejected</h1>
+    <img src="./assets/protestant against inovations.png" alt="Protests">
+    <p class="quote">"The greatest danger in times of turbulence is acting with yesterday's logic."</p>
+    <p>
+      People doubted Uber.<br>
+      People doubted Airbnb.<br>
+      People doubted Online Banking.<br>
+      Today they dominate our lives.
+    </p>
+  </div>
+</section>
+
+<!-- SLIDE 3 -->
+<section class="slide digital">
+  <div class="content">
+    <img src="./assets/digital revolution.png">
+    <p>
+      We no longer travel the same way.<br>
+      We no longer bank the same way.<br>
+      We no longer shop the same way.
+    </p>
+    <h2>Why should Local market shopping remain the same?</h2>
+  </div>
+</section>
+
+<!-- SLIDE 4 -->
+<section class="slide problem">
+  <div class="content">
+    <h1>The Problem</h1>
+    <p>
+      A banker closes late.<br>
+      A doctor finishes a shift exhausted.<br>
+      A business owner spends all day in meetings.<br>
+      Yet the market errands still need to be done.
+    </p>
+  <h1 style="color: red; text-transform: uppercase;">
+  Millions face this problem every day.
+</h1>
+  </div>
+</section>
+
+<!-- SLIDE 5 -->
+<section class="slide solution">
+  <div class="content">
+    <h1>Introducing Market Boi</h1>
+    <img src="./assets/logo.png" alt="Logo" style="max-height:180px;">
+    <h2>AI Powered Market Shopping Platform</h2>
+<p style="font-weight: bold; text-transform: uppercase;">
+  <span style="color: yellow;">
+    Customers → Field Agents → Logistics Agents → Local Market Vendors
+  </span>
+  <br>
+  <span style="color: green;">
+    Connected in One Ecosystem
+  </span>
+</p>
+  </div>
+</section>
+
+<!-- SLIDE 6 -->
+ 
+<section class="slide solution">
+  <div class="content">
+        <img src="./assets/how it works.png" alt="how it works flow chart">
+  </div>
+</section> 
+
+
+
+<section class="slide solution">
+  <div class="content">
+    <h1>Customer Platform</h1>
+    <img src="./assets/customer_ui_only.png" alt="Customer UI">
+  </div>
+</section>
+
+<!-- SLIDE 7 -->
+
+<section class="slide solution">
+  <div class="content">
+    <h1>Field Agent Platform</h1>
+    <img src="./assets/agent ui.png" alt="Agent UI">
+  </div>
+</section>
+
+<!-- SLIDE 8 -->
+<section class="slide solution">
+  <div class="content">
+    <h1>Logistics Platform</h1>
+    <img src="./assets/LOGISTICS UI.png" alt="Logistics UI">
+  </div>
+</section>
+
+<!-- SLIDE 9 -->
+<section class="slide solution">
+  <div class="content">
+    <h1>Admin Dashboard</h1>
+    <img src="./assets/ADMIN UI.png" alt="Admin UI">
+  </div>
+</section>
+
+<!-- SLIDE 10 -->
+<section class="slide solution">
+  <div class="content">
+    <h1>Supervisor Dashboard</h1>
+    <img src="./assets/SUPERVISORS UI.png" alt="Supervisors UI">
+  </div>
+</section>
+
+<!-- SLIDE 11 -->
+<section class="slide invest">
+  <div class="content">
+    <h1>Why Invest?</h1>
+    <p>WHY THIS WILL WIN
+We Are Not Replacing Markets
+We Are Digitizing Markets<br>
+This is important.
+Most startups try to replace traditional markets.
+Market Boi empowers them.
+Market Boi brings customers to traders.
+Market Boi creates jobs.
+Market Boi strengthens local commerce.
+</p>
+    <p>
+      Nigeria has over 200 million people.<br>
+      Every household buys food.<br>
+      Every household needs convenience.<br>
+      <span style="color: yellow; font-weight: bold;">
+  MARKETT BOI SITS AT THE CENTER OF BOTH!!!.
+</span>
+    </p>
+  </div>
+</section>
+
+<!-- SLIDE 12 -->
+<section class="slide invest">
+  <div class="content">
+    <h1>Our Vision</h1>
+    <h2>To Become Africa's Largest Neighborhood Commerce Platform</h2>
+    <p>
+      Digitizing traditional markets.<br>
+      Creating jobs.<br>
+      Connecting communities.<br>
+      Building the future.
+    </p>
+  </div>
+</section>
+
+<!-- SLIDE 13 -->
+<section class="slide invest">
+ <div style="text-align: center; font-family: Arial, sans-serif; margin: 40px 0;">
+  <h1 style="color: yellow; text-transform: uppercase; font-weight: bold;">
+    ⏰ Time Is The New Currency
+  </h1>
+
+  <p style="font-style: italic; color: #ffc107; margin: 20px 0;">
+    "Time is more valuable than money. You can get more money, but you cannot get more time."
+    <br>— Jim Rohn
+  </p>
+
+  <p style="color: white; font-weight: bold; text-transform: uppercase;">
+    Market Boi saves both.
+  </p>
+</div>
+</section>
+
+<!-- SLIDE 14 -->
+<section class="slide invest">
+  <div class="content">
+    <h1>Join The Future</h1>
+    <h2>Market Boi</h2>
+   <p style="font-size: 1.2rem; text-align: center; line-height: 1.8;">
+  If <span style="color: #ff0000; font-weight: bold; text-transform: uppercase;">UBER</span> digitized transportation<br>
+  If <span style="color: #0077b6; font-weight: bold; text-transform: uppercase;">AIRBNB</span> digitized accommodation<br>
+  If <span style="color: #ff9900; font-weight: bold; text-transform: uppercase;">AMAZON</span> digitized shopping<br>
+  <span style="color: white font-weight: bold; text-transform: uppercase;">MARKET BOI</span> will digitize the African marketplace
+</p>
+
+  </div>
+</section>
+
+<section class="slide invest">
+  <div style="text-align: center; font-family: Arial, sans-serif; margin: 40px 0;">
+  <h1 style="color: yellow; text-transform: uppercase; font-weight: bold;">
+    💹 Why Invest Now?
+  </h1>
+
+  <p style="color: white; font-size: 1.2rem; margin: 20px 0;">
+    Investors make the highest returns when they enter <span style="color: #22c55e; font-weight: bold;">early</span>.<br>
+    Not when everyone already believes.
+  </p>
+
+  <p style="font-style: italic; color: #ffc107; margin: 20px 0;">
+    "The best time to plant a tree was 20 years ago.<br>
+    The second best time is now."<br>
+    — Ancient Proverb
+  </p>
+</div>
+ <button onclick="location.href='./index.html#our-plan'" 
+        style="background-color: #22c55e; color: white; 
+               font-size: 16px; font-weight: bold; 
+               padding: 12px 24px; border: none; 
+               border-radius: 8px; cursor: pointer; 
+               box-shadow: 0 4px 6px rgba(0,0,0,0.2); 
+               transition: background-color 0.3s ease;">
+  Invest in Market Boi
+</button>
+
+</section>
+
+<div class="nav-buttons">
+  <button class="prev">◀ Previous</button>
+  <button class="next">Next ▶</button>
+</div>
+
+
+<script>
+
+const slides =
+document.querySelectorAll(".slide");
+
+let current = 0;
+
+function showSlide(index){
+
+slides.forEach(slide=>{
+
+slide.classList.remove("active");
+
+});
+
+slides[index].classList.add("active");
+
+}
+
+document.querySelector(".next")
+.addEventListener("click",()=>{
+
+current++;
+
+if(current >= slides.length){
+
+current = slides.length - 1;
+
+}
+
+showSlide(current);
+
+});
+
+document.querySelector(".prev")
+.addEventListener("click",()=>{
+
+current--;
+
+if(current < 0){
+
+current = 0;
+
+}
+
+showSlide(current);
+
+});
+
+document.addEventListener("keydown",(e)=>{
+
+if(e.key==="ArrowRight"){
+
+document.querySelector(".next").click();
+
+}
+
+if(e.key==="ArrowLeft"){
+
+document.querySelector(".prev").click();
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
