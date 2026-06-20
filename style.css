@@ -76,7 +76,11 @@ html {
   padding: 1rem 3rem;
   background: #0d1b2a;
 }
-
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 .logo-link {
   text-decoration: none;
 }
